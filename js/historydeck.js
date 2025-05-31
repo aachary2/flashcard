@@ -1,0 +1,47 @@
+let question ={
+    "Who was the first president of the United States?": "George Washington",
+    "When was the Cold war": "1947-1991",
+    "Who wrote the declaration of independence": "Thomas Jefferson",
+    "Who was the second president of the United States": "John Adams"
+
+
+}
+let data= Object.entries(question);
+let count = 0;
+const q = document.querySelector('.question');
+const ans = document.querySelector('.answer');
+const checkButton= document.querySelector('#check');
+const nextButton= document.querySelector('#next');
+const previousButton = document.querySelector('#prev');
+
+
+function getQuestion(){
+    q.innerHTML = `<h3>${data[count][0]}</h3>`;
+    ans.innerHTML = `<h3>${data[count][1]}</h3>`
+  
+}
+function nextCard() {
+    count++;
+    if (count >= data.length) {
+      count = 0; 
+    }
+    getQuestion();
+    ans.style.display = 'none';
+  }
+  function previousCards(){
+    count--;
+    if (count >= data.length) {
+        count = 0; 
+      }
+      getQuestion();
+      ans.style.display = 'none';
+
+  }
+
+checkButton.addEventListener('click',function(){
+    ans.style.display='block';
+});
+nextButton.addEventListener('click',nextCard);
+previousButton.addEventListener('click',previousCards);
+getQuestion();
+
