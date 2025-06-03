@@ -44,7 +44,7 @@ body{
     
     align-items: center;
     top:0;
-    border: 2px solid rgba(64, 49, 15, 0.67);
+    border: 2px solid rgba(70, 56, 24, 0.67);
 }
 .question-container{
     height: 100%;
@@ -106,9 +106,5 @@ textarea{
 .answer{
     display:none;
 }
-.front-btn{
-    display: none;
-    position: absolute;
-    transform: translate(0,125px);
-}
+
 
