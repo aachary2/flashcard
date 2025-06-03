@@ -1,8 +1,8 @@
 let question ={
-    "Who was the first president of the United States?": "George Washington",
+    "Who was the first president of USA?": "George Washington",
     "When was the Cold war": "1947-1991",
-    "Who wrote the declaration of independence": "Thomas Jefferson",
-    "Who was the second president of the United States": "John Adams"
+    "Who wrote the Declaration of Independence": "Thomas Jefferson",
+    "Who was the second president of USA": "John Adams"
 
 
 }
