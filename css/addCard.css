@@ -13,7 +13,7 @@ header {
 }
 h1{
     padding: 25px;
-    margin-top: -15px;
+    margin-top: -20px;
 
 }
 
@@ -27,7 +27,7 @@ body{
     background-color: beige;
     font-family: "Ancizar Sans", sans-serif;
     position: relative;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .container{
@@ -38,12 +38,10 @@ body{
     flex-direction: column;
 }
 .outer-container{
-    height:150px;
-    width:750px;
+    height:151px;
+    width:751px;
     display: flex;
-    
     align-items: center;
-    top:0;
     border: 2px solid rgba(70, 56, 24, 0.67);
 }
 .question-container{
@@ -67,12 +65,12 @@ body{
     gap:1rem;
 }
 .btn{
-    height:75px;
+    height:78px;
     width: auto;
     display: flex;
     align-items: center;
     border: 3px solid white;
-    border-radius: 15px;
+    border-radius: 17px;
     cursor:pointer;
    
 }
@@ -91,11 +89,10 @@ textarea{
 }
 .card{
     height: 350px;
-    width: 600px;
+    width: 620px;
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
     text-align: center;
     color: black;
     
