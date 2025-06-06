@@ -1,45 +1,53 @@
+const flashcards = document.querySelector(".flashcards");
+const box_container = document.querySelector(".container");
+const buttons = document.querySelector("#check");
+let data= [];
 
-  const createFlashCardBtn = document.querySelector('.create-btn');
-  const cards = document.querySelector('.container');
-
-
-  createFlashCardBtn.addEventListener("click", ()=> {
-    createFlashCard();
-
-
-  });
-
-
-  function createFlashCard(){
-    const answerContainer = document.createElement('div');
-    const answerElement= document.createElement('h5');
-    const textareaAnswer= document.createElement('textarea');
-    const questionContainers = document.createElement('div');
-    const questions= document.createElement('div');
-    const element= document.createElement('h5');
-    const textAreaQ = document.createElement('textarea');
-
-
-    element.innerHTML='Question:';
-
-    textAreaQ.setAttribute('cols', '20');
-    textAreaQ.setAttribute('rows', '4');
-    
-    textareaAnswer.setAttribute('cols', '20');
-    textareaAnswer.setAttribute('rows', '4');
-    questionContainers.classList.add('outer-container');
-    questions.classList.add('question-container');
-    answerElement.innerHTML='Answer:';
-
-    answerContainer.appendChild(answerElement);
-    answerContainer.appendChild(textareaAnswer);
-    
-    questions.appendChild(element);
-    questions.appendChild(textAreaQ);
-    questionContainers.appendChild(questions);
-    questionContainers.appendChild(answerContainer);
-    cards.appendChild(questionContainers);
-
-    
-  }
+function viewCard() {
   
+    let study_card = {
+      question: question.value,
+      answer: answer.value,
+    };
+    data.push(study_card);
+    createCard(data[data.length - 1]);
+  }
+
+function createCard(notecard) {
+    flashcards.style.display="flex";
+    buttons.style.display="flex";
+    box_container.style.display = "none";
+
+     container = document.createElement("div");
+     question_ = document.createElement("h3");
+     answer_ = document.createElement("h3");
+     
+  
+    
+    question_.innerHTML = notecard.question;
+    answer_.style.display='none'
+    answer_.innerHTML = notecard.answer;
+    answer_.style.border='5px solid green';
+
+   
+    container.appendChild(question_);
+    container.appendChild(answer_);
+    
+    
+    flashcards.appendChild(container);
+
+    buttons.addEventListener("click", () => {
+
+      if(answer_.style.display === "none"){
+        answer_.style.display = "block"
+        }else{
+            answer_.style.display = "none";
+        }
+       
+         
+        
+    });
+
+   
+  
+}

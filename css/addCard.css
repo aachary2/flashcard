@@ -1,102 +1,73 @@
-*{
-   
-    margin: 0;
-    padding: 0;
-    
-}
-header {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
 
+.display-5{
+    text-align: center;
+}
 
 body{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: beige;
-    font-family: "Ancizar Sans", sans-serif;
-    position: relative;
-    gap: 1rem;
-}
-
-.container{
-    height: auto;
-    width: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.outer-container{
-    height:155px;
-    width:755px;
-    display: flex;
-    align-items: center;
-    border: 2px solid rgba(70, 56, 24, 0.67);
-}
-.question-container{
-    height: 100%;
-    width:50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.answer-container{
-    height: 100%;
-    width:50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.btn-container{
-    height: auto;
-    width: auto;
-    display: flex;
-    gap:1rem;
-}
-.btn{
-    height:78px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    border: 3px solid orange;
-    border-radius: 17px;
-    cursor:pointer;
+    
+    background-color:beige;
+    height: 100vh;
+    width: 100vw;
    
-}
-textarea{
-    
-    text-align: center;
 
 }
-.study-screen{
-    height: 100%;
-    width:100%;
+
+
+  #check{
+    color:white;
     display: none;
-    gap:1rem;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 15px;
+  }
 
-}
-.card{
-    height: 350px;
-    width: 620px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+
+  
+  
+  .container{
     text-align: center;
-    color: black;
+    background-color: white;
+    padding: 24px;
+    border-radius: 19px;
+    box-shadow: 0 0 0 15px rgba(118, 115, 115, 0.344);
+    max-width: 360px;
+    margin:auto;
+    margin-top: 118px;
     
+
 }
-.question{
+
+  .box {
+    background-color: white;
     display: flex;
-}
-.answer{
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 18px 10px;
+    
+  }
+  
+  .flashcards{
+    
+    text-align: center;
+    background-color: white;
     display:none;
+    padding: 15px;
+    border-radius: 9px;
+    box-shadow: 0 0 0 15px rgba(118, 115, 115, 0.344);
+    max-width: 360px;
+    margin:auto;
+    margin-top: 118px;
+    
+
 }
-
-
+#view{
+    color:white;
+    background-color: orange;
+    padding: 15px;
+    border-radius: 8px;
+}
+  
+  
+ 
+  

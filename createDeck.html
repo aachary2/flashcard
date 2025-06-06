@@ -11,30 +11,39 @@
     <nav class="navbar navbar-light" style="background-color: white;">
         <div class="container-fluid">
             <a class="navbar-brand" href="homepage.html">Main Menu</a>
-            <a class="navbar-brand" href="createDeck.html">Create own Deck</a>
         </div>
       </nav>
       
 </header>
 <body>
     <h1 class="display-5">Create Your Own Deck</h1>
-    
-    <div class="container"> </div>
-        <div class="btn-container"> 
-            <div class="create-btn btn">Create Flashcard</div>
-           
-    </div>
-    <div class="study-screen">
-        <div class="question card"> </div>
-        <div class="answer card"> </div>
-        <div class="btn-container"> 
-            <div class="prev-btn btn">Previous Question</div>
-            <div class="back-btn btn">Check Answer</div>
-            <div class="next-btn btn">Next Question</div>
+
+    <div class="container">
+        
+             <h2>Create Card</h2>
+             <div class="box">
+                <form>
+                    <div class="form-group">
+                      <label for="q">Question: </label>
+                      <input type="text" class="form-control" id="question" placeholder="Enter Question">
+                    </div>
+                    <div class="form-group">
+                      <label for="ans">Answer: </label>
+                      <input type="text" class="form-control" id="answer" placeholder="Enter Answer">
+                    </div>
+                  </form>
+            </div>
+             <div class="btns">
+                <button type ="button" class="btn btn-sm"  id="view" onclick="viewCard()">View Study Card</button>
+             </div>
 
         </div>
-    
+ 
 
+    <div class="flashcards"></div>
+    <div class="d-flex justify-content-center">
+    <button type ="button" class="btn btn-sm" id="check">Check Answer</button>
+    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/createDeck.js"></script>
