@@ -35,3 +35,6 @@ nav li:first-child{
 .card-text{
     text-align: left;
 }
+footer {
+    color:blue;
+  }

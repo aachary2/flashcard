@@ -51,5 +51,18 @@ checkButton.addEventListener('click',function(){
 nextButton.addEventListener('click',nextCard);
 previousButton.addEventListener('click',previousCards);
 getQuestion();
+const colors = document.getElementById('color');
+const colorBtn = document.getElementById('colorBtn');
+colorBtn.addEventListener('click', () => {
+ 
+  colors.click();
+});
+
+colors.addEventListener('input', function() {
+  
+  const colorChoice = colors.value;
+  document.body.style.backgroundColor = colorChoice;
+ 
+});
 
   
